@@ -3,5 +3,6 @@ export type Routes = {
   Opacity: undefined;
   Translate: undefined;
   Scale: undefined;
+  Dimensions: undefined;
 
 };

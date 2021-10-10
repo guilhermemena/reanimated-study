@@ -8,6 +8,7 @@ import Examples from './src/examples'
 import Opacity from './src/basic/opacity'
 import Translate from './src/basic/translate';
 import Scale from './src/basic/scale';
+import Dimensions from './src/basic/dimensions';
 
 const Stack = createStackNavigator();
 
@@ -41,6 +42,13 @@ export default function App() {
           component={Scale}
           options={{
             title: "Basics with scale"
+          }}
+        />
+        <Stack.Screen
+          name="Dimensions"
+          component={Dimensions}
+          options={{
+            title: "Basics with dimensions"
           }}
         />
       </Stack.Navigator>
