@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import Examples from './src/examples'
 import Opacity from './src/basic/opacity'
 import Translate from './src/basic/translate';
+import Scale from './src/basic/scale';
 
 const Stack = createStackNavigator();
 
@@ -33,6 +34,13 @@ export default function App() {
           component={Translate}
           options={{
             title: "Basics with translate"
+          }}
+        />
+        <Stack.Screen
+          name="Scale"
+          component={Scale}
+          options={{
+            title: "Basics with scale"
           }}
         />
       </Stack.Navigator>

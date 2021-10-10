@@ -15,6 +15,10 @@ export const examples = [
     screen: "Translate",
     title: "Playing with translate",
   },
+  {
+    screen: "Scale",
+    title: "Playing with scale",
+  },
 
 ] as const;
 
