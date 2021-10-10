@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native'
 
 import Examples from './src/examples'
 import Opacity from './src/basic/opacity'
+import Translate from './src/basic/translate';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +26,13 @@ export default function App() {
           component={Opacity}
           options={{
             title: "Basics with opacity"
+          }}
+        />
+        <Stack.Screen
+          name="Translate"
+          component={Translate}
+          options={{
+            title: "Basics with translate"
           }}
         />
       </Stack.Navigator>
